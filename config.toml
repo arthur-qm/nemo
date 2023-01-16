@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "pt-br"
+title = "NEMO"
+theme = "zafta"

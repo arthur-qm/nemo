@@ -1,0 +1,19 @@
+
+@media only screen and (min-width: 500px) {
+    nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+nav.autohide {
+    background-color: rgba(218, 238, 234, 0.5);
+}
+
+span.nemo-icon {
+    background-image: url('../imgs/fotonemo.jpg');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}

@@ -1,0 +1,11 @@
+.logocominfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--dark-bg-color);
+    filter:brightness(0.7);
+    clip-path: polygon(100% 0, 0 0, 0% 75%, 100% 100%);
+    background-color: aqua;
+}
