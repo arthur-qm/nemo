@@ -5,4 +5,12 @@
 <h1>Problemas do mês</h1>
 <p>Esses são os problemas do mês!</p>
 
+{{ $qnt_problemas := 0 }}
+{{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
+    {{ if and (in .Params.Categories "problema-mes") (le $qnt_problemas  5) }}
+        {{ partial "post-summary.html" (dict "ctx" . "Title" .Title "Description" .Description "thumb" (add "../." .Params.thumb) "day" .Params.creation_date.Day "month" (.Params.creation_date.Format "01") "year" .Params.creation_date.Year "link" .Permalink "hour" .Params.creation_date.Hour "minute" .Params.creation_date.Minute)}}
+        {{ .Scratch.Add "qnt_problemas" 1}}
+    {{ end }}
+{{ end }}
+
 {{ partial "footer.html" . }}

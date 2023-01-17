@@ -5,7 +5,7 @@
 <h1>{{ .Title }}</h1>
 <p>{{ .Description }}</p>
 <img src="{{ add "../." .Params.thumb }}" alt="">
-<p>Publicado em {{ .Params.creation_date.Day }} - {{ .Params.creation_date.Format "01" }} - {{ .Params.creation_date.Year }}</p>
+<p>Publicado em {{ .Params.creation_date.Day }}/{{ .Params.creation_date.Format "01" }}/{{ .Params.creation_date.Year }} às {{.Params.creation_date.Hour}}:{{.Params.creation_date.Minute}}</p>
 <p>{{ .Content }} </p>
 
 {{ partial "footer.html" . }}
