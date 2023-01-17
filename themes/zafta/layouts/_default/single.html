@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+{{ partial "separador.html" }}
+
+<h1>{{ .Title }}</h1>
+<p>{{ .Description }}</p>
+<img src="{{ add "../." .Params.thumb }}" alt="">
+<p>Publicado em {{ .Params.creation_date.Day }} - {{ .Params.creation_date.Format "01" }} - {{ .Params.creation_date.Year }}</p>
+<p>{{ .Content }} </p>
+
+{{ partial "footer.html" . }}

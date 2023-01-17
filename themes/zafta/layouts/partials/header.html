@@ -14,7 +14,11 @@
         <link rel="stylesheet" href="./css/navbar.css">
         <link rel="shortcut icon" href="./imgs/fotonemo.jpg" type="image/x-icon">
         <link rel="stylesheet" href="./css/indexpage.css">
-    {{else}}
+    {{else if (add $baseUrl "post/") in (add .Permalink "") }}
+        <link rel="stylesheet" href="../../css/navbar.css">
+        <link rel="shortcut icon" href="../../imgs/fotonemo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="../../css/separador.css">
+    {{ else }}
         <link rel="stylesheet" href="../css/navbar.css">
         <link rel="shortcut icon" href="../imgs/fotonemo.jpg" type="image/x-icon">
         <link rel="stylesheet" href="../css/separador.css">

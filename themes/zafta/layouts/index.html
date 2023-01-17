@@ -32,10 +32,30 @@
 
 <div class="noticias">
     <h1>Notícias</h1>
+    {{ $qnt_noticias := 0 }}
+    {{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
+        {{ if and (in .Params.Categories "noticia") (le $qnt_noticias  2) }}
+            <h3>{{ .Title}} </h3>
+            <p>{{ .Description }}</p>
+            <img src="{{ .Params.thumb }}" alt="">
+            <p>Publicado em {{ .Params.creation_date.Day }}-{{ .Params.creation_date.Format "01" }}-{{ .Params.creation_date.Year }} às {{ .Params.creation_date.Hour }}:{{ .Params.creation_date.Minute }}</p>
+            <a class="btn btn-primary" href="{{ .Permalink }}">Acessar</a>
+            {{ .Scratch.Add "qnt_noticias" 1}}
+        {{ end }}
+    {{ end }}
 </div>
 
 <div class="posts-recentes">
     <h1>Posts recentes</h1>
+    {{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
+        {{if not (in .Params.Categories "noticia")}}
+        <h3>{{ .Title}} </h3>
+        <p>{{ .Description }}</p>
+        <img src="{{ .Params.thumb }}" alt="">
+        <p>Publicado em {{ .Params.creation_date.Day }}-{{ .Params.creation_date.Format "01" }}-{{ .Params.creation_date.Year }} às {{ .Params.creation_date.Hour }}:{{ .Params.creation_date.Minute }}</p>
+        <a class="btn btn-primary" href="{{ .Permalink }}">Acessar</a>
+        {{ end }}
+    {{ end }}
 </div>
 
 {{ partial "footer.html" . }}

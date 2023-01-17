@@ -19,5 +19,50 @@
       <description></description>
     </item>
     
+    <item>
+      <title>contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>materials</title>
+      <link>/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/materials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>months-problems</title>
+      <link>/months-problems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/months-problems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>news</title>
+      <link>/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Primeiro post</title>
+      <link>/post/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first/</guid>
+      <description>Este é um post legal. Ele é composto por frases legais. :D :D :D</description>
+    </item>
+    
   </channel>
 </rss>

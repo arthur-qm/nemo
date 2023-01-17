@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on NEMO</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on NEMO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Primeiro post</title>
+      <link>/post/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first/</guid>
+      <description>Este é um post legal. Ele é composto por frases legais. :D :D :D</description>
+    </item>
+    
+  </channel>
+</rss>
