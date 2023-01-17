@@ -31,7 +31,23 @@
   </url>
   
   <url>
+    <loc>/categories/noticia/</loc>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/first-copy-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/first-copy-3/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/first-copy/</loc>
   </url>
   
   <url>
@@ -39,7 +55,23 @@
   </url>
   
   <url>
+    <loc>/post/problemadomes1/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/problema-mes/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/second/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/terceiro/</loc>
   </url>
   
 </urlset>

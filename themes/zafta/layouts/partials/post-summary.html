@@ -1,5 +1,13 @@
-<h3>{{ .Title}} </h3>
-<p>{{ .Description }}</p>
-<img src="{{ .thumb }}" alt="" width="300px">
-<p>Publicado em {{ .day }}/{{ .month }}/{{ .year }} às {{ .hour }}:{{ .minute }}</p>
-<a class="btn btn-primary" href="{{ .link }}">Acessar</a>
+<div class="resumo-post">
+    <img src="{{ .thumb }}" alt="">
+    
+    <div class="post-resumo-texto">
+        <h3>{{ .Title}} </h3>
+        <p>{{ .Description }}</p>
+        
+        <!--<p>Publicado em {{ .day }}/{{ .month }}/{{ .year }} às {{ .hour }}:{{ .minute }}</p>--> 
+            <a class="btn btn-primary" href="{{ .link }}">Acessar</a>
+    </div>
+    
+</div>
+

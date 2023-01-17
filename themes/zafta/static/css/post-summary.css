@@ -1,0 +1,26 @@
+.post-container {
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+.resumo-post {
+    flex-grow: 1;
+    border: 1px solid black;
+    width: min(100%, 300px);
+    margin: 3px;
+    padding: 0;
+}
+
+.resumo-post .post-resumo-texto {
+    padding: 10px;
+}
+
+.resumo-post img {
+    display: block;
+    width: min(100%, 300px);
+    height: max-content;
+    border: 5px solid gray;
+    margin: 0;
+    padding: 0;
+}

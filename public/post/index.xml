@@ -12,11 +12,69 @@
     
     <item>
       <title>Primeiro post</title>
+      <link>/post/first-copy-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first-copy-2/</guid>
+      <description>Este é um post legal. Ele é composto por frases legais. :D :D
+:D</description>
+    </item>
+    
+    <item>
+      <title>Primeiro post</title>
+      <link>/post/first-copy-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first-copy-3/</guid>
+      <description>Este é um post legal. Ele é composto por frases legais. :D :D
+:D</description>
+    </item>
+    
+    <item>
+      <title>Primeiro post</title>
+      <link>/post/first-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first-copy/</guid>
+      <description>Este é um post legal. Ele é composto por frases legais. :D :D
+:D</description>
+    </item>
+    
+    <item>
+      <title>Primeiro post</title>
       <link>/post/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/first/</guid>
-      <description>Este é um post legal. Ele é composto por frases legais. :D :D :D</description>
+      <description>Este é um post legal. Ele é composto por frases legais. :D :D
+:D</description>
+    </item>
+    
+    <item>
+      <title>Primeiro problema do mês</title>
+      <link>/post/problemadomes1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/problemadomes1/</guid>
+      <description>Esse é o texto do primeiro problema do mês.</description>
+    </item>
+    
+    <item>
+      <title>Segundo post</title>
+      <link>/post/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/second/</guid>
+      <description>Este é um segundo post. Ele tem a categoria notícia</description>
+    </item>
+    
+    <item>
+      <title>Terceiro post</title>
+      <link>/post/terceiro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/terceiro/</guid>
+      <description>Este é o terceiro post&amp;hellip;.?!</description>
     </item>
     
   </channel>
