@@ -19,6 +19,7 @@
     display: flex;
     align-items: stretch;
     flex-direction: column;
+    color: black;
 }
 
 .resumo-post a {

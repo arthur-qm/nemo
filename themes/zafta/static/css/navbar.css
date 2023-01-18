@@ -6,8 +6,13 @@
     }
 }
 
-nav.autohide {
+nav.solid {
     background-color: rgba(218, 238, 234, 1);
+}
+
+nav {
+    background-color: rgb(253, 246, 241);;
+    transition: background-color 1s;
 }
 
 span.nemo-icon {
