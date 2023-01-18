@@ -1,8 +1,10 @@
 {{ partial "header.html" . }}
 
 <div class="logocominfo">
-    <h1>NEMO</h1>
-    <p>Núcleo de Estudos de Matemática Olímpica</p>
+    <div class="textos-logo">
+        <h1>NEMO</h1>
+        <p>Núcleo de Estudos de Matemática Olímpica</p>
+    </div>
     <div class="video-container">
         <video autoplay muted loop>
             <source src="./videos/FishCurve.mp4" type="video/mp4">
@@ -63,7 +65,7 @@
             {{ if (in .Params.Categories "noticia") }}
             {{ $k := $.Scratch.Get "qnt_noticias"}}
             {{ if le $k 3}}
-            <div class="col">
+            <div class="col rounded-lg">
                 {{ partial "post-summary.html" (dict "ctx" . "Title" .Title "Description" .Description "thumb" .Params.thumb "day" .Params.creation_date.Day "month" (.Params.creation_date.Format "01") "year" .Params.creation_date.Year "link" .Permalink "hour" .Params.creation_date.Hour "minute" .Params.creation_date.Minute)}}
                 {{ $.Scratch.Set "qnt_posts" (add ($.Scratch.Get "qnt_noticias") 1)}}
             </div>
