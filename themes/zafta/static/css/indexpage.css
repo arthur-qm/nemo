@@ -22,16 +22,24 @@
     pointer-events: none;
 }
 
+.textos-logo h1 {
+    font-weight: 1000;
+}
+
 .textos-logo {
     position: absolute;
     text-align: center;
     width: 50vw;
     font-size: 1.3rem;
     z-index: 0;
+    color: black;
+    font-weight: bold;
 }
 
 
-
+body {
+    background-color: rgb(253, 246, 241);
+}
 
 .o-que-e, .noticias {
     background-color: #e5e5e5;
