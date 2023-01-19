@@ -1,0 +1,24 @@
+
+@media only screen and (min-width: 500px) {
+    nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+nav.solid {
+    background-color: rgba(218, 238, 234, 1);
+}
+
+nav {
+    background-color: rgb(253, 246, 241);;
+    transition: background-color 1s;
+}
+
+span.nemo-icon {
+    background-image: url('../imgs/fotonemo.jpg');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
