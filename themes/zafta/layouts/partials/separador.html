@@ -16,7 +16,7 @@
         <script>
             var thish1 = document.getElementsByTagName('h1')[0];
             thish1.textContent = "";
-            var title = "{{.Title}}";
+            var title = {{.Title}};
 
             for (let i = 0; i < title.length; i++) {
                 if (title[i] >= 'A' && title[i] <= 'Z') {

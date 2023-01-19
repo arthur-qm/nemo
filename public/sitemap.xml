@@ -3,75 +3,79 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://arthur-qm.github.io/about/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://arthur-qm.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>https://arthur-qm.github.io/contact/</loc>
   </url>
   
   <url>
-    <loc>/materials/</loc>
+    <loc>https://arthur-qm.github.io/materials/</loc>
   </url>
   
   <url>
-    <loc>/months-problems/</loc>
+    <loc>https://arthur-qm.github.io/months-problems/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://arthur-qm.github.io/</loc>
   </url>
   
   <url>
-    <loc>/news/</loc>
+    <loc>https://arthur-qm.github.io/news/</loc>
   </url>
   
   <url>
-    <loc>/categories/noticia/</loc>
+    <loc>https://arthur-qm.github.io/categories/noticia/</loc>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://arthur-qm.github.io/post/</loc>
   </url>
   
   <url>
-    <loc>/post/first-copy-2/</loc>
+    <loc>https://arthur-qm.github.io/post/first-copy-2/</loc>
   </url>
   
   <url>
-    <loc>/post/first-copy-3/</loc>
+    <loc>https://arthur-qm.github.io/post/first-copy-3/</loc>
   </url>
   
   <url>
-    <loc>/post/first-copy/</loc>
+    <loc>https://arthur-qm.github.io/post/first-copy/</loc>
   </url>
   
   <url>
-    <loc>/post/first/</loc>
+    <loc>https://arthur-qm.github.io/post/first/</loc>
   </url>
   
   <url>
-    <loc>/post/problemadomes1/</loc>
+    <loc>https://arthur-qm.github.io/post/problemadomes1/</loc>
   </url>
   
   <url>
-    <loc>/categories/problema-mes/</loc>
+    <loc>https://arthur-qm.github.io/post/problemamesoutubro2022/</loc>
   </url>
   
   <url>
-    <loc>/post/second/</loc>
+    <loc>https://arthur-qm.github.io/categories/problema-mes/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://arthur-qm.github.io/post/second/</loc>
   </url>
   
   <url>
-    <loc>/post/terceiro/</loc>
+    <loc>https://arthur-qm.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arthur-qm.github.io/post/terceiro/</loc>
   </url>
   
 </urlset>

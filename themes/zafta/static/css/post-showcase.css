@@ -1,0 +1,21 @@
+.post-content-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.post-content-container .description {
+    text-align: center;
+    color: gray;
+    font-size: large;
+}
+
+.post-content-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-publish-date {
+    text-align: center;
+    color: gray;
+}

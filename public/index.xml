@@ -2,123 +2,132 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NEMO</title>
-    <link>/</link>
+    <link>https://arthur-qm.github.io/</link>
     <description>Recent content on NEMO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arthur-qm.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>about</title>
-      <link>/about/</link>
+      <link>https://arthur-qm.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://arthur-qm.github.io/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>contact</title>
-      <link>/contact/</link>
+      <link>https://arthur-qm.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
+      <guid>https://arthur-qm.github.io/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>materials</title>
-      <link>/materials/</link>
+      <link>https://arthur-qm.github.io/materials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/materials/</guid>
+      <guid>https://arthur-qm.github.io/materials/</guid>
       <description></description>
     </item>
     
     <item>
       <title>months-problems</title>
-      <link>/months-problems/</link>
+      <link>https://arthur-qm.github.io/months-problems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/months-problems/</guid>
+      <guid>https://arthur-qm.github.io/months-problems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>news</title>
-      <link>/news/</link>
+      <link>https://arthur-qm.github.io/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/news/</guid>
+      <guid>https://arthur-qm.github.io/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first-copy-2/</link>
+      <link>https://arthur-qm.github.io/post/first-copy-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first-copy-2/</guid>
+      <guid>https://arthur-qm.github.io/post/first-copy-2/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first-copy-3/</link>
+      <link>https://arthur-qm.github.io/post/first-copy-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first-copy-3/</guid>
+      <guid>https://arthur-qm.github.io/post/first-copy-3/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first-copy/</link>
+      <link>https://arthur-qm.github.io/post/first-copy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first-copy/</guid>
+      <guid>https://arthur-qm.github.io/post/first-copy/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first/</link>
+      <link>https://arthur-qm.github.io/post/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first/</guid>
+      <guid>https://arthur-qm.github.io/post/first/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro problema do mês</title>
-      <link>/post/problemadomes1/</link>
+      <link>https://arthur-qm.github.io/post/problemadomes1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/problemadomes1/</guid>
+      <guid>https://arthur-qm.github.io/post/problemadomes1/</guid>
       <description>Esse é o texto do primeiro problema do mês.</description>
     </item>
     
     <item>
-      <title>Segundo post</title>
-      <link>/post/second/</link>
+      <title>Problema do mês de outubro</title>
+      <link>https://arthur-qm.github.io/post/problemamesoutubro2022/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/second/</guid>
+      <guid>https://arthur-qm.github.io/post/problemamesoutubro2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Segundo post</title>
+      <link>https://arthur-qm.github.io/post/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arthur-qm.github.io/post/second/</guid>
       <description>Este é um segundo post. Ele tem a categoria notícia</description>
     </item>
     
     <item>
       <title>Terceiro post</title>
-      <link>/post/terceiro/</link>
+      <link>https://arthur-qm.github.io/post/terceiro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/terceiro/</guid>
+      <guid>https://arthur-qm.github.io/post/terceiro/</guid>
       <description>Este é o terceiro post&amp;hellip;.?!</description>
     </item>
     

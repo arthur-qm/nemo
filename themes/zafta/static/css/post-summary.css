@@ -4,7 +4,12 @@
     box-sizing: content-box;
 }
 
-.col {
+.post-container .col .resumo-post {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-container .col {
     margin-bottom: 20px;
 }
 

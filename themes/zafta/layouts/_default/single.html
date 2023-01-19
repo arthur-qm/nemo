@@ -2,10 +2,12 @@
 
 {{ partial "separador.html" . }}
 
-<h1>{{ .Title }}</h1>
-<p>{{ .Description }}</p>
-<img src="{{ add "../." .Params.thumb }}" alt="">
-<p>Publicado em {{ .Params.creation_date.Day }}/{{ .Params.creation_date.Format "01" }}/{{ .Params.creation_date.Year }} às {{.Params.creation_date.Hour}}:{{.Params.creation_date.Minute}}</p>
-<p>{{ .Content }} </p>
+<div class="post-content-container">
+    <p class="description">{{ .Description }}</p>
+    <img src="{{ add "../." .Params.thumb }}" alt="">
+    <p>{{ .Content }} </p>
+    <p class="post-publish-date"><i>Publicado em {{ .Params.creation_date.Day }}/{{ .Params.creation_date.Format "01" }}/{{ .Params.creation_date.Year }} às {{.Params.creation_date.Hour}}:{{.Params.creation_date.Minute}}</i></p>
+</div>
+
 
 {{ partial "footer.html" . }}

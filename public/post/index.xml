@@ -2,78 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on NEMO</title>
-    <link>/post/</link>
+    <link>https://arthur-qm.github.io/post/</link>
     <description>Recent content in Posts on NEMO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arthur-qm.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first-copy-2/</link>
+      <link>https://arthur-qm.github.io/post/first-copy-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first-copy-2/</guid>
+      <guid>https://arthur-qm.github.io/post/first-copy-2/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first-copy-3/</link>
+      <link>https://arthur-qm.github.io/post/first-copy-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first-copy-3/</guid>
+      <guid>https://arthur-qm.github.io/post/first-copy-3/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first-copy/</link>
+      <link>https://arthur-qm.github.io/post/first-copy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first-copy/</guid>
+      <guid>https://arthur-qm.github.io/post/first-copy/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro post</title>
-      <link>/post/first/</link>
+      <link>https://arthur-qm.github.io/post/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/first/</guid>
+      <guid>https://arthur-qm.github.io/post/first/</guid>
       <description>Este é um post legal. Ele é composto por frases legais. :D :D
 :D</description>
     </item>
     
     <item>
       <title>Primeiro problema do mês</title>
-      <link>/post/problemadomes1/</link>
+      <link>https://arthur-qm.github.io/post/problemadomes1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/problemadomes1/</guid>
+      <guid>https://arthur-qm.github.io/post/problemadomes1/</guid>
       <description>Esse é o texto do primeiro problema do mês.</description>
     </item>
     
     <item>
-      <title>Segundo post</title>
-      <link>/post/second/</link>
+      <title>Problema do mês de outubro</title>
+      <link>https://arthur-qm.github.io/post/problemamesoutubro2022/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/second/</guid>
+      <guid>https://arthur-qm.github.io/post/problemamesoutubro2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Segundo post</title>
+      <link>https://arthur-qm.github.io/post/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arthur-qm.github.io/post/second/</guid>
       <description>Este é um segundo post. Ele tem a categoria notícia</description>
     </item>
     
     <item>
       <title>Terceiro post</title>
-      <link>/post/terceiro/</link>
+      <link>https://arthur-qm.github.io/post/terceiro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/terceiro/</guid>
+      <guid>https://arthur-qm.github.io/post/terceiro/</guid>
       <description>Este é o terceiro post&amp;hellip;.?!</description>
     </item>
     

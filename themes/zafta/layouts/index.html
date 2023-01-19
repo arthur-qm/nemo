@@ -82,7 +82,7 @@
         
             {{$.Scratch.Set "qnt_posts" 0}}
             {{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
-            {{if and (not (in .Params.Categories "noticia")) (not (in .Params.Categories "problema-mes"))}}
+            {{if not (in .Params.Categories "noticia") }}
             {{$k := $.Scratch.Get "qnt_posts"}}
             {{ if le $k 3}}
             <div class="col">
