@@ -1,3 +1,15 @@
 <div class="div-separadora">
     
+    {{ $baseUrl := .Site.BaseURL }} 
+    {{ if eq (add .Permalink "") (add $baseUrl "about/") }}
+        <h1>$\mathbb{S}$obre</h1>
+    {{ else if eq (add .Permalink "") (add $baseUrl "materials/") }}
+        <h1>$\mathbb{L}$istas e $\mathbb{M}$ateriais</h1>
+    {{ else if eq (add .Permalink "") (add $baseUrl "months-problems/") }}
+        <h1>$\mathbb{P}$roblemas do $\mathbb{M}$ês</h1>
+    {{ else if eq (add .Permalink "") (add $baseUrl "news/") }}
+        <h1>$\mathbb{N}$otícias</h1>
+    {{ else if eq (add .Permalink "") (add $baseUrl "contact/") }}
+        <h1>$\mathbb{C}$ontato</h1>
+    {{ end }}
 </div>
