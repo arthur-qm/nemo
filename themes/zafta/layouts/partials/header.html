@@ -48,7 +48,10 @@
         <link rel="shortcut icon" href="./imgs/fotonemo.jpg" type="image/x-icon">
         <link rel="stylesheet" href="./css/indexpage.css">
         <link rel="stylesheet" href="./css/post-summary.css">
-    {{else if (add $baseUrl "post/") in (add .Permalink "") }}
+    {{else if in (add $baseUrl "post/") (add .Permalink "") }}
+        <script>
+            console.log("{{add .Permalink ""}}\n");
+        </script>
         <link rel="stylesheet" href="../../css/navbar.css">
         <link rel="stylesheet" href="../../css/footer.css">
         <link rel="shortcut icon" href="../../imgs/fotonemo.jpg" type="image/x-icon">
