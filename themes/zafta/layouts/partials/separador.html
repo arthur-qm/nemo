@@ -11,5 +11,20 @@
         <h1>$\mathbb{N}$otícias</h1>
     {{ else if eq (add .Permalink "") (add $baseUrl "contact/") }}
         <h1>$\mathbb{C}$ontato</h1>
+    {{ else if in (add .Permalink "") (add $baseUrl "post/") }}
+        <h1></h1>
+        <script>
+            var thish1 = document.getElementsByTagName('h1')[0];
+            thish1.textContent = "";
+            var title = "{{.Title}}";
+
+            for (let i = 0; i < title.length; i++) {
+                if (title[i] >= 'A' && title[i] <= 'Z') {
+                    thish1.textContent += `$\\mathbb{${title[i]}}$`
+                } else {
+                    thish1.textContent += title[i];
+                }
+            }
+        </script>
     {{ end }}
 </div>

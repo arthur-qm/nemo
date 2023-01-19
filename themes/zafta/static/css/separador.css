@@ -1,12 +1,10 @@
 div.div-separadora {
-    height: 200px;
+    height: 180px;
     background-color: rgb(253, 246, 241);
-    margin-top: 57.03px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .div-separadora h1 {
-    line-height: 190px;
     margin: auto;
-    vertical-align: middle;
 }
