@@ -1,6 +1,6 @@
 +++
 Title = "Um ótimo material de Álgebra Linear para olimpíadas"
-Description = "Este material de Giuliano Boava apresenta de maneira otimizada e breve os principais conceitos e teoremas. Ele também mostra algumas questões. A partir, dele é possível resolver praticamente todas as questões de álgebra linear de olimpíadas!"
+Description = "Este material de Giuliano Boava apresenta de maneira otimizada e breve os principais conceitos e teoremas. Ele também mostra algumas questões. A partir dele, é possível resolver praticamente todas as questões de álgebra linear de olimpíadas!"
 thumb = ""
 Tags = []
 Categories = []

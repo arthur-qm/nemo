@@ -2,7 +2,219 @@
 
 {{ partial "separador.html" . }}
 
-<h1>Materiais</h1>
-<p>Esses são os materiais!</p>
+<div class="central-content">
+    <h2>Listas utilizadas nos encontros</h2>
+    <!-- tracineo -->
+    <div class="post-container post-showcase row">
+        {{ $qnt_problemas := 0 }}
+        {{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
+            {{ if and (in .Params.Tags "lista-encontro") (le $qnt_problemas  5) }}
+            <div class="col">
+                {{ partial "post-summary.html" (dict "ctx" . "Title" .Title "Description" .Description "thumb" (add "../." .Params.thumb) "day" .Params.creation_date.Day "month" (.Params.creation_date.Format "01") "year" .Params.creation_date.Year "link" .Permalink "hour" .Params.creation_date.Hour "minute" .Params.creation_date.Minute)}}
+                {{ .Scratch.Add "qnt_problemas" 1}}
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+
+    
+    <div id="accordion">
+    <h2>Materiais teóricos</h2>
+    <div class="card">
+        <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Métodos de demonstração
+            </button>
+        </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p><b>Todas</b> as questões de olimpíadas (exceto a Elon Lages, que é de múltipla escolha) pedem para que você prove afirmações. Então, não só é importante que você domine bem técnicas de demonstração para que tenha um maior ferramental à disposição na hora de resolver problemas, mas também para que você aprenda a redigir provas matemáticas em diferentes contextos.</p>
+                <div class="post-container post-showcase row">
+                    {{ $qnt_problemas := 0 }}
+                    {{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
+                        {{ if and (in .Params.Tags "lista-encontro") (le $qnt_problemas  5) }}
+                        <div class="col">
+                            {{ partial "post-summary.html" (dict "ctx" . "Title" .Title "Description" .Description "thumb" (add "../." .Params.thumb) "day" .Params.creation_date.Day "month" (.Params.creation_date.Format "01") "year" .Params.creation_date.Year "link" .Permalink "hour" .Params.creation_date.Hour "minute" .Params.creation_date.Minute)}}
+                            {{ .Scratch.Add "qnt_problemas" 1}}
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Indução
+            </button>
+        </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p>Essa técnica de demonstração é tão recorrente em problemas de olimpíada que vale à pena que exista um material só para ela. Aqui revisaremos algumas coisas discutidas no material passado e aprofundaremos um pouco.</p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFourteen">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+            Princípio da Casa dos Pombos (PCP)
+            </button>
+        </h5>
+        </div>
+        <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p>Um pouco menos recorrente que indução, mas não menos importante, o PCP pode ser utilizado de maneira criativa para resolver diversas questões.</p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Invariantes
+            </button>
+        </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p>Outra técnica de demonstração [...]</p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFive">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Teoria dos Números
+            </button>
+        </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p>Este assunto cai em 99% das provas de olimpíada. É possível abordá-lo de maneira mais "própria" quando você estudar álgebra. Mas, por enquanto, estude esses materiais:</p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingSix">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Equações funcionais
+            </button>
+        </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingSeven">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Polinômios e Teoria dos Números
+            </button>
+        </h5>
+        </div>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingEight">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            Operações binárias
+            </button>
+        </h5>
+        </div>
+        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingNine">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            Cálculo 1
+            </button>
+        </h5>
+        </div>
+        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTen">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            Álgebra Linear
+            </button>
+        </h5>
+        </div>
+        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingEleven">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            Sequências e séries
+            </button>
+        </h5>
+        </div>
+        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwelve">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            Funções Geratrizes
+            </button>
+        </h5>
+        </div>
+        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThirteen">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+            Grafos
+            </button>
+        </h5>
+        </div>
+        <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordion">
+        <div class="card-body">
+            <p></p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
 
 {{ partial "footer.html" . }}
