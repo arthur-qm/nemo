@@ -1,6 +1,6 @@
 <div class="resumo-post">
     <div class="post-img-container">
-        <img src="{{ .thumb }}" alt="">
+        <img src={{ cond (eq .thumb "") "../imgs/fotonemo.jpg" .thumb}} alt="">
     </div>
     <div class="post-resumo-texto">
         <h3>{{ .Title}} </h3>

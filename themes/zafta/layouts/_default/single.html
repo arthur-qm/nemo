@@ -6,7 +6,7 @@
     <p class="description">{{ .Description }}</p>
     <img src="{{ add "../." .Params.thumb }}" alt="">
     <p>{{ .Content }} </p>
-    <p class="post-publish-date"><i>Publicado em {{ .Params.creation_date.Day }}/{{ .Params.creation_date.Format "01" }}/{{ .Params.creation_date.Year }} às {{.Params.creation_date.Hour}}:{{.Params.creation_date.Minute}}</i></p>
+    <p class="post-publish-date"><i>Publicado em {{ .Params.creation_date.Day }}/{{ .Params.creation_date.Format "01" }}/{{ .Params.creation_date.Year }} às {{.Params.creation_date.Hour}}:{{cond (le .Params.creation_date.Minute 9) (add "0" (string .Params.creation_date.Minute)) .Params.creation_date.Minute}}</i></p>
 </div>
 
 
