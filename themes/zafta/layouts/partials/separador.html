@@ -2,15 +2,15 @@
     
     {{ $baseUrl := .Site.BaseURL }} 
     {{ if eq (add .Permalink "") (add $baseUrl "about/") }}
-        <h1>$\mathbb{S}$obre</h1>
+        <h1>Sobre</h1>
     {{ else if eq (add .Permalink "") (add $baseUrl "materials/") }}
-        <h1>$\mathbb{L}$istas e $\mathbb{M}$ateriais</h1>
+        <h1>Listas e materiais</h1>
     {{ else if eq (add .Permalink "") (add $baseUrl "months-problems/") }}
-        <h1>$\mathbb{P}$roblemas do $\mathbb{M}$ês</h1>
+        <h1>Problemas do mês</h1>
     {{ else if eq (add .Permalink "") (add $baseUrl "news/") }}
-        <h1>$\mathbb{N}$otícias</h1>
+        <h1>Notícias</h1>
     {{ else if eq (add .Permalink "") (add $baseUrl "contact/") }}
-        <h1>$\mathbb{C}$ontato</h1>
+        <h1>Contato</h1>
     {{ else if in (add .Permalink "") (add $baseUrl "post/") }}
         <h1></h1>
         <script>
@@ -19,7 +19,7 @@
             var title = {{.Title}};
 
             for (let i = 0; i < title.length; i++) {
-                if (title[i] >= 'A' && title[i] <= 'Z') {
+                if (title[i] >= 'A' && title[i] <= 'Z' && false) {
                     thish1.textContent += `$\\mathbb{${title[i]}}$`
                 } else {
                     thish1.textContent += title[i];
