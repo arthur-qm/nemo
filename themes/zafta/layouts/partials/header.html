@@ -63,6 +63,8 @@
         <link rel="stylesheet" href="../css/generic-pages.css">
         {{ if eq (add .Permalink "") (add $baseUrl "about/") }}
             <link rel="stylesheet" href="../css/about.css">
+        {{ else if eq (add .Permalink "") (add $baseUrl "contact/")}}
+            <link rel="stylesheet" href="../css/contact.css">    
         {{ end }}
     {{ end }}
 
@@ -103,3 +105,4 @@
         </div>
     </nav>
 </header>
+<article>
