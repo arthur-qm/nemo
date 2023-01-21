@@ -100,6 +100,8 @@ body {
 .img-container {
     min-width: none;
     max-width: 800px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .image {
