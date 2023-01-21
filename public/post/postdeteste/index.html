@@ -90,7 +90,7 @@
         <script>
             var thish1 = document.getElementsByTagName('h1')[0];
             thish1.textContent = "";
-            var title = "Problema do mês de outubro";
+            var title = "Um post de testes";
 
             for (let i = 0; i < title.length; i++) {
                 if (title[i] >= 'A' && title[i] <= 'Z' && false) {
@@ -104,12 +104,26 @@
 </div>
 
 <div class="post-content-container">
-    <p class="description">O problema do mês da vez envolve xadrez e possibilidades de estratégias! Pontos extras serão dados às soluções mais elegantes.</p>
-    <img src="../../imgs/post-imgs/problem-imgs/problemadomesoutubro.jpg" alt="">
-    <p><p>Uma peça invisível está em uma casa desconhecida de um tabuleiro $3 \times 3$. A cada minuto, a peça se move para uma casa adjacente
-(com um lado comum) e, em seguida, você pode checar três casas do tabuleiro a sua escolha para determinar se a peça está em alguma delas. Existe uma estratégia que te permita encontrar a peça após um número finito de minutos?</p>
+    <p class="description">Esse post serve meramente para testar como o Latex se comporta neste site! :D...por isso que não tem imagem! D:</p>
+    <img src="../." alt="">
+    <p><p>Seja $V$ um espaço vetorial em $\mathbb{R}$ e sejam $v_1, , v_2, , \dots v_n$ (com $v_i \in V$) $n$ vetores linearmente independentes.
+Suponha que existam $u_1, , u_2, \dots u_m$ (com $u_i \in V$) tais que $V = \text{span} \left( u_1, \dots , u_m \right)$.</p>
+<p>Prove que $m \geq n$.</p>
+<p><strong>Caso 1:</strong> Os vetores $u_i$ são linearmente independentes.</p>
+<p>Neste caso, suponha, por absurdo, que $n &gt; m$. Note que como os $u_i$ geram $V$, então, para cada $j$, existem $a_i$ tais que
+$$ v_j = \sum\limits_{i=1}^m a_i u_i$$</p>
+<p>Esses $a_i$ são não todos nulos, porque, se todos o fossem, teríamos que $v_j = 0$, o que é impossível dado que não existe
+vetor $0$ em lista de vetor LI.
+Tomando um certo $a_k \neq 0$, temos que $u_k \in \text{span} \left( u_1, \dots, u_{k-1}, v_1, \dots , u_m \right)$. Daí, é fácil perceber que este span é igual a $V$. Fazendo isso para $j=2$, por exemplo, teríamos que $v_2$ é uma
+combinação linear dessa lista de vetores. Mas, nesse caso, o coeficiente de pelo menos um dos $u_i$ seria $0$, uma vez que, se todos
+fossem $0$, então teríamos achado que $v_2$ é uma combinação linear de outros $v$'s, um absurdo, já que eles são LI.
+Dessa maneira, conseguimos ir substituindo os $u$'s até que tenhamos $V = \text{span} \left( v_1, \dots, v_n\right)$. Mas daí
+$v_{n+1} \in V$ implicaria que $v_{n+1}$ é parte desse span, o que indicaria que os $v$'s são LD, absurdo!</p>
+<p>Portanto, $m \geq n$ para esse caso, como desejado.</p>
+<p><strong>Caso 2:</strong> Os vetores $u_i$ são linearmente dependentes.</p>
+<p>Neste caso, basta ir removendo $u$'s da lista até chegarmos no caso 1. $\blacksquare$</p>
  </p>
-    <p class="post-publish-date"><i>Publicado em 19/01/2023 às 19:14</i></p>
+    <p class="post-publish-date"><i>Publicado em 19/01/2023 às 19:29</i></p>
 </div>
 
 

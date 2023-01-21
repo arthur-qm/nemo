@@ -19,5 +19,14 @@
       <description>Esse é o texto do primeiro problema do mês.</description>
     </item>
     
+    <item>
+      <title>Problema do mês de outubro</title>
+      <link>https://arthur-qm.github.io/post/problemamesoutubro2022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arthur-qm.github.io/post/problemamesoutubro2022/</guid>
+      <description>Uma peça invisível está em uma casa desconhecida de um tabuleiro $3 \times 3$. A cada minuto, a peça se move para uma casa adjacente (com um lado comum) e, em seguida, você pode checar três casas do tabuleiro a sua escolha para determinar se a peça está em alguma delas. Existe uma estratégia que te permita encontrar a peça após um número finito de minutos?</description>
+    </item>
+    
   </channel>
 </rss>
