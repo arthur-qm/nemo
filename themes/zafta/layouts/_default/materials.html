@@ -169,6 +169,17 @@
         <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-bs-parent="#accordion">
         <div class="card-body">
             <p></p>
+            <div class="row post-container post-showcase">
+            {{ $qnt_problemas := 0 }}
+            {{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
+                {{ if and ( and (in .Params.Categories "material") (in .Params.Tags "algelin") ) (le $qnt_problemas  5) }}
+                <div class="col">
+                    {{ partial "post-summary.html" (dict "ctx" . "Title" .Title "Description" .Description "thumb" (add "../." .Params.thumb) "day" .Params.creation_date.Day "month" (.Params.creation_date.Format "01") "year" .Params.creation_date.Year "link" .Permalink "hour" .Params.creation_date.Hour "minute" .Params.creation_date.Minute)}}
+                    {{ .Scratch.Add "qnt_problemas" 1}}
+                </div>
+                {{ end }}
+            {{ end }}
+            </div>
         </div>
         </div>
     </div>

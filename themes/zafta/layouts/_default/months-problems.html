@@ -3,6 +3,9 @@
 {{ partial "separador.html" . }}
 
 <div class="central-content">
+    <h2>O que são os problemas do mês?</h2>
+    <p>São desafios propostos mensalmente a todos os alunos de gradução de São Carlos. Esses desafios são no mesmo estilo de problemas discursivos de olimpíadas de matemática.</p>
+    <p>Quem tiver a melhor solução ganha uma peça de giz Hagoromo.</p>
     <div class="post-container post-showcase row">
     {{ $qnt_problemas := 0 }}
     {{ range sort (where .Site.RegularPages "Type" "post") "Params.creation_date" "desc"}}
