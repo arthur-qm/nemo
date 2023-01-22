@@ -15,6 +15,109 @@
     </p>
     <h2>Como são os problemas de olimpíadas de matemática?</h2>
     <p>Como já dito, são problemas que, diferentemente dos exercícios de provas de vestibulares, de escolas ou de faculdades, não testam seus conhecimentos para saber se você sabe um determinado conceito, nem como fazer determinado algoritmo matemático e nem se sabe como resolver um exercício "manjado". Eles são, na verdade, <strong>problemas que podem ser resolvidos através de ideias simples usadas em conjunto de maneira criativa</strong>. Eis um exemplo: </p>
+    <div id="accordion-example">
+    <div class="card">
+        <div class="card-header" id="heading2">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Clique para mostrar o exemplo
+                </button>
+            </h5>
+        </div>
+    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-bs-parent="#accordion-example">
+    <p style="color: gray;"><i><b>Qual o maior número de reis que podem ser colocados num tabuleiro de xadrez sem que eles fiquem em xeque, isto é, sem que haja dois deles que estejam em casas vizinhas pelo lado ou vizinhas pela diagonal?</b></i></p>
+    <div class="row">
+        <div class="col">
+            <div class="img-container">
+                <img src="../imgs/about-imgs/xadrez_invalido1.png" alt="" class="img-xadrez">
+            </div>
+            <div class="paragraph">
+                <p>Arranjo <span style="color: red;">inválido</span>, pois os reis do canto inferior esquerdo estão um na diagonal do outro.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="img-container">
+                <img src="../imgs/about-imgs/xadrez_invalido2.png" alt="" class="img-xadrez">
+            </div>
+            <div class="paragraph">
+                <p>Arranjo <span style="color: red;">inválido</span>, pois os reis no canto inferior esquerdo estão um do lado do outro.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="img-container">
+                <img src="../imgs/about-imgs/xadrez_valido.png" alt="" class="img-xadrez">
+            </div>
+            <div class="paragraph">
+                <p>Arranjo <span style="color: green;">válido</span>, pois não há nenhum par de reis que ou estejam do lado do outro ou na diagonal do outro.</p>
+            </div>
+        </div>
+    </div>
+    <p>Dentre os arranjos mostrados, note que apenas o terceiro é válido. Mas será que esse é o arranjo válido com a maior quantidade possível de reis?</p>
+    <p>Antes de mostrar a solução, é imprescindível que <b>você mesmo tente</b> resolver a questão! Seria ótimo se você estivesse com um papel e lápis à disposição, já que fazer rabiscos ajuda bastante a resolver problemas assim. Mas não se preocupe caso não esteja, porque <b><a href="https://lichess.org/editor/8/8/8/8/8/8/8/8_w_-_-_0_1?color=white">este site</a></b> permite que você ponha e remova reis de um tabuleiro de maneira prática!</p>
+    <p>Além disso, esteja avisado que é completamente insuficiente você dizer apenas a resposta. Em provas de olimpíadas, você deve <em>provar</em> que a sua resposta está correta, isto é, explicar de maneira rigorosa e sem margem para contra-argumentos que ela está, com certeza, certa.</p>
+    <p>Dito isso, <i>apenas</i> depois de tentar resolver, olhe nossa solução sugerida:</p>
+    <div id="accordion-sol">
+        <div class="card">
+            <div class="card-header" id="heading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    Clique para mostrar a resolução
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-bs-parent="#accordion-sol">
+                <p>Se você não tentou, tente!!!</p>
+                <div id="accordion-real-sol">
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Clique se realmente tentou!
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-bs-parent="#accordion-real-sol">
+                            <p>Provarei que a resposta é $16$, mas, antes de tudo, é importante dizer que se sua resolução está na seguinte lista, ela está <b>errada</b>:</p>
+                            <ul>
+                                <li>
+                                    <p>"Basta pegar os reis o menos distante possível um dos outros, porque, assim, o espaço é aproveitado da melhor maneira. (dá um exemplo com $16$ reis no tabuleiro)"</p>
+                                    <p>Apesar de ser intuitivo, esse tipo de argumentação é inválido, pois, nela, não há rigor matemático: e se tivesse uma melhor maneira de aproveitar o espaço? O que é ser posicionado "o menos distante possível dos outros"? E se tivesse alguma maneira de posicionar os reis que fosse melhor que essa, mas que eles não fossem posicionados "o menos distante possível uns dos outros"? Veja que todas essas perguntas ficaram sem uma resposta clara a partir do que foi escrito!</p>
+                                </li>
+                            </ul>
+                            <p><b>Solução sugerida: </b>Considere a seguinte divisão do tabuleiro em caixinhas 2x2:</p>
+                            <div class="img-container">
+                                <img src="../imgs/about-imgs/xadrez-sol.png" alt="" class="img-xadrez">
+                            </div>
+                            <p>Note que é impossível que existam 2 reis numa mesma caixinha dessas, porque, se existissem, ou seriam vizinhos diagonais ou estariam um do lado do outro. Como existem $4 \times 4 = 16$ caixinhas assim, existem, no máximo, $16$ reis no tabuleiro.</p>
+                            <p>Agora, observe a seguinte configuração:</p>
+                            <div class="img-container">
+                                <img src="../imgs/about-imgs/xadrez-exemplo-16.png" alt="" class="img-xadrez">
+                            </div>
+                            <p>Esse arranjo possui $16$ reis. Então, se provamos que o máximo era menor ou igual a $16$ e demos um exemplo com $16$ reis, então a resposta só pode ser $16$. $\blacksquare$</p>
+                            <p><b>Comentário sobre a solução: </b>Note que essa solução é completamente rigorosa e não abre espaços para contra-argumentos. Note também que, caso você tenha pensado por bastante tempo nela, ela é, apesar disso, uma solução bem curta. É natural que você pense que uma solução assim seja "carteada", isto é, que eu tirei ela do nada e que seria impossível você pensar nela. Mas, pense um pouco: agora que você viu essa estratégia que envolve obsevar partes do tabuleiro, você está muito mais preparado para problemas do mesmo tipo. E, de todo modo, essa solução foi divertida, não foi?</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>  
+    </div>
+    <h2>De quais as olimpíadas de matemática o NEMO participa?</h2>
+    <p>Os integrantes do NEMO participam de várias olimpíadas de matemática universitária, sejam elas nacionais ou internacionais. São elas: </p>
+    <ul>
+        <li>International Mathematics Competition (IMC)</li>
+        <li>Competencia Iberoamericana Interuniversitaria de Matemáticas (CIIM)</li>
+        <li>Olimpiada Iberoamericana de Matemática Universitaria (OIMU)</li>
+        <li>Olimpíada Brasileira de Matemática (OBM)</li>
+        <li>Competição Elon Lages Lima de Matemática (CELL)</li>
+    </ul>
+    <p>Mais informações sobre cada uma delas podem ser encontradas no <a href="/faq">FAQ</a>.</p>
+    <h2>Como ingressar no NEMO?</h2>
+    <p>Não existe processo de ingresso! Basta colar nos encontros semanais que der pra você ir que você já é considerado membro do NEMO. O horário dos encontros semanais é decidido no início do ano por uma enquete no nosso <a href="https://t.me/nemoavisos" target="_blank">canal de avisos do Telegram</a>. Se você tiver alguma dúvida e quiser falar conosco, mais informações de contato estão disponíveis <a href="/contact">na aba contato</a>. Também pode ser que sua dúvida esteja no <a href="/faq">FAQ</a>.</p>
 </div>
 
 
