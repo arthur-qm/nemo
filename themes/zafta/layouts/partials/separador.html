@@ -9,6 +9,8 @@
         <h1>Problemas do mês</h1>
     {{ else if eq (add .Permalink "") (add $baseUrl "news/") }}
         <h1>Notícias</h1>
+    {{ else if eq (add .Permalink "") (add $baseUrl "faq/") }}
+        <h1>FAQ</h1>    
     {{ else if eq (add .Permalink "") (add $baseUrl "contact/") }}
         <h1>Contato</h1>
     {{ else if in (add .Permalink "") (add $baseUrl "post/") }}

@@ -64,7 +64,9 @@
         {{ if eq (add .Permalink "") (add $baseUrl "about/") }}
             <link rel="stylesheet" href="../css/about.css">
         {{ else if eq (add .Permalink "") (add $baseUrl "contact/")}}
-            <link rel="stylesheet" href="../css/contact.css">    
+            <link rel="stylesheet" href="../css/contact.css">
+        {{ else if eq (add .Permalink "") (add $baseUrl "faq/")}}
+            <link rel="stylesheet" href="../css/faq.css">
         {{ end }}
     {{ end }}
 
@@ -98,6 +100,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/news">Notícias</a>
                 </li>
+                <li class="nav-item"><a href="/faq" class="nav-link">FAQ</a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contato</a>
                 </li>
