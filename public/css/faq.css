@@ -1,0 +1,16 @@
+.img-olimpiada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(70%, 200px);
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img-olimpiada img {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
